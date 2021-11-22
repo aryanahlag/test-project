@@ -1,0 +1,108 @@
+.notifications
+  padding: 0px 16px 0px 16px
+  display: flex
+  flex-direction: column
+  .v-sheet
+    width: 100%
+  .notification
+    display: flex
+    align-items: flex-start
+    font-family: $notoFont
+    flex-direction: column
+    border-bottom: 1px solid $greyLight
+    padding: 12px 0px 12px 0px
+    .notification-info
+      font-size: 10px
+      display: flex
+      flex-direction: row
+      align-items: center
+      margin-bottom: 8px
+      .tag
+        color: $red
+        margin-left: 8px
+    .notification-title
+      font-size: 14px
+      margin-bottom: 8px
+    .notification-desc
+      font-size: 12px
+      margin: 0
+
+.comment-notify-bar
+  height: max-content
+  width: 100%
+  display: flex
+
+  .like-button
+    width: 50%
+    align-self: start
+
+    span
+      color: #008CCD
+      font-size: 13px
+      font-family: $pretendFont
+      font-weight: 700
+
+  .comment-button
+    width: 50%
+    align-self: end
+
+    span
+      color: #008CCD
+      font-size: 13px
+      font-family: $pretendFont
+      font-weight: 700
+
+.v-input
+  height: 45px
+  font-size: 13px
+
+.comment-notify-top
+  height: max-content
+  padding: 5px 10px 0px 10px
+  width: 100%
+
+.comment-notify-body
+  width: 100%
+  padding: 5px 10px 0px 10px
+  height: 400px
+  overflow-x: hidden
+  overflow-y: scroll
+
+  .comment-content
+    border-bottom: 1px solid lightgray
+    width: 100%
+    height: max-content
+    padding: 5px 0px 10px 0px
+    display: flex
+
+    .comment-profile
+      height: 40px
+      width: 40px
+      border-radius: 99%
+      object-fit: cover
+      align-self: start
+
+    li
+      list-style: none
+
+    .body-content
+      max-width: 80%
+      height: max-content
+
+      .name
+        font-weight: 700
+        font-family: $pretendFont
+        font-size: 14px
+
+        small
+          font-weight: 200
+          font-size: 10px
+          font-family: $pretendFont
+
+      .comment
+        font-size: 13px
+        font-family: $pretendFont
+
+
+.comment-notify-body::-webkit-scrollbar
+  width: 0px

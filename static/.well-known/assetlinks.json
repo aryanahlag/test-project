@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.twa.dukwanserver",
+      "sha256_cert_fingerprints": [
+        "42:A4:64:45:CA:31:77:D2:30:82:DB:B2:F7:96:EF:B7:79:99:43:3A:42:62:57:BA:33:4A:25:E1:2A:62:E3:40"
+      ]
+    }
+  }
+]

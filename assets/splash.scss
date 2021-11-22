@@ -1,0 +1,34 @@
+#splash {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  .splash-icon {
+    width: 100%;
+    height: 50%;
+    background-image: url("~/static/splash.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-top: 25%;
+  }
+
+  .splash-contain {
+    text-align: center;
+    .text-loading {
+      font-family: $pretendFont;
+      font-size: 18px;
+      font-weight: 900;
+      color: #CFCFCF;
+    }
+
+    .text-loading-2 {
+      margin-top: 10%;
+      span{
+        font-family: $pretendFont;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+  }
+}

@@ -1,0 +1,250 @@
+#rebroadcast {
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+
+  .vod-profile {
+    position: absolute;
+    z-index: 99;
+    top: 51px;
+    width: 100%;
+    height: 50px;
+    padding: 5px 0px 2px 20px;
+    display: flex;
+
+    .profile-image {
+      height: 40px;
+      width: 40px;
+      border-radius: 99%;
+    }
+
+    .profile-name {
+      font-family: $pretendFont;
+      color: white;
+
+      span {
+        font-weight: 300;
+      }
+    }
+  }
+
+  .vod-comment {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    bottom: 100px;
+    right: 10px;
+    z-index: 101;
+  }
+
+  .love-emoticon {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    bottom: 147px;
+    z-index: 100;
+    right: 10px;
+  }
+
+  .vod-bar {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    padding: 16px 10px 12px 10px;
+    border-radius: 0px 0px 5px 5px;
+    align-items: center;
+    max-height: 50px;
+
+
+    .left {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+
+      .title {
+        font-family: $pretendFont;
+        color: white;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+
+  .vjs-custom-skin {
+    height: 100vh !important;
+    width: 100%;
+
+    ::v-deep .vjs-tech {
+      object-fit: cover;
+    }
+
+    ::v-deep .vjs-big-play-button {
+      background-color: rgba(0, 0, 0, 0);
+      background-image: url("~/assets/images/play-video.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      z-index: 99;
+      border: none;
+      height: 50px;
+      width: 50px;
+      top: 45%;
+      left: 45%;
+
+      span {
+        display: none;
+      }
+
+    }
+
+    ::v-deep .vjs-control-bar {
+      background: none;
+      height: 70px;
+      padding: 0px 10px 0px 10px;
+
+      .vjs-progress-control {
+        height: 30px;
+        margin-top: 31px;
+      }
+
+      .vjs-play-control {
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        left: 46%;
+        height: 30px;
+      }
+
+      .vjs-picture-in-picture-control {
+        display: none;
+      }
+
+      .vjs-fullscreen-control {
+        display: none;
+      }
+
+      .vjs-current-time {
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        left: 0;
+      }
+
+      .vjs-volume-panel {
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        left: 0;
+        height: 30px;
+      }
+
+      .vjs-remaining-time {
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        right: 0;
+        height: 30px;
+      }
+    }
+
+    ::v-deep .video-js {
+      width: 100% !important;
+      height: 100vh !important;
+      object-fit: cover;
+    }
+  }
+}
+
+.content-vod-comment {
+  padding: 5px 5px 70px 5px;
+  width: 100%;
+  height: 90%;
+  font-family: $pretendFont;
+  font-weight: 700;
+  font-size: 16px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  .comment-section {
+    width: 100%;
+    padding: 5px;
+    height: max-content;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: #737373 1px 4px 5px;
+
+    li {
+      list-style: none;
+    }
+
+    .user-image {
+      align-self: flex-start;
+      object-fit: cover;
+      height: 40px;
+      width: 40px;
+      border-radius: 99%;
+    }
+
+    .user-section {
+      font-family: $pretendFont;
+
+      .user-name {
+        display: flex;
+      }
+
+      .user-comment {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.content-vod-comment::-webkit-scrollbar {
+  width: 0px;
+}
+
+.vod-comment-input {
+  height: 45px;
+  font-family: $pretendFont;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.content-vod-likes{
+  padding: 5px 5px 20px 5px;
+  width: 100%;
+  height: 90%;
+  font-family: $pretendFont;
+  font-weight: 500;
+  font-size: 16px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  .person-like{
+    border-bottom: 0.5px solid lightgray;
+    padding: 5px 0px 5px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .person-image{
+      align-self: start;
+      height: 40px;
+      width: 40px;
+      object-fit: cover;
+      border-radius: 99%;
+    }
+  }
+}
+
+.content-vod-likes::-webkit-scrollbar {
+  width: 0px;
+}

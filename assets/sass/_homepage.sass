@@ -1,0 +1,202 @@
+@import "notifications"
+$layouts-android-min-small: 200px
+$layouts-android-small: 400px
+$layouts-android-min-medium: 401px
+$layouts-android-medium: 500px
+$layouts-android-min-large: 501px
+$layouts-android-large: 600px
+$layouts-android-min-x-large: 601px
+$layouts-android-x-large: 700px
+$layouts-tab-min-first: 701px
+$layouts-tab-first: 800px
+$layouts-tab-min-second: 801px
+$layouts-tab-second: 900px
+$layouts-tab-min-third: 901px
+$layouts-tab-third: 1000px
+$layouts-tab-min-fourth: 1001px
+$layouts-tab-fourth: 1100px
+$layouts-web-min-first: 1200px
+$layouts-web-first: 1900px
+
+.vod
+  padding: 5px 10px 5px 10px
+
+  .vod-section
+    width: 100%
+    height: 300px
+    white-space: nowrap
+    overflow-x: scroll
+    overflow-y: hidden
+    -webkit-overflow-scrolling: touch
+
+    .vod-division
+      text-decoration: none
+      padding-top: 5px
+      height: 100%
+      width: 145px
+      display: inline-block
+
+      .vod-duration
+        background-color: rgba(0, 0, 0, 0.3)
+        height: 20px
+        font-size: 13px
+        font-family: $pretendFont
+        width: fit-content
+        margin-left: 10px
+        margin-top: 5px
+        position: relative
+        z-index: 15
+        border-radius: 5px
+        color: white
+        padding: 0px 5px 0px 5px
+
+      h5
+        color: black
+
+      .vod-video
+        box-shadow: #6C7481 2px 2px 5px
+        height: 70%
+        width: 100%
+        border-radius: 10px
+        object-fit: cover
+        margin-top: -25px
+
+      .vod-description
+        list-style: none
+        color: gray
+
+  .vod-section::-webkit-scrollbar
+    height: 0px
+@media (min-width: $layouts-web-min-first) and (max-width: $layouts-web-first)
+  .homepage
+    .homepage-bar
+      object-fit: cover
+      width: 100%
+    .notice
+      .notice-title
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        .title-text
+          color: #B67C35
+          font-weight: bold
+          font-size: 19px
+@media (min-width: $layouts-tab-min-fourth) and (max-width: $layouts-tab-fourth)
+  .homepage
+    .homepage-bar
+      object-fit: cover
+      width: 100%
+    .notice
+      .notice-title
+        font-family: $pretendFont
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        .title-text
+          color: #B67C35
+          font-weight: bold
+          font-size: 18.5px
+@media (min-width: $layouts-tab-min-third) and (max-width: $layouts-tab-third)
+  .homepage
+    .homepage-bar
+      object-fit: cover
+      width: 100%
+    .notice
+      .notice-title
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        .title-text
+          color: #B67C35
+          font-weight: bold
+          font-size: 18.5px
+@media (min-width: $layouts-tab-min-second) and (max-width: $layouts-tab-second)
+  .homepage
+    .homepage-bar
+      object-fit: cover
+      width: 100%
+    .notice
+      .notice-title
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        .title-text
+          color: #B67C35
+          font-weight: bold
+          font-size: 18px
+@media (min-width: $layouts-tab-min-first) and (max-width: $layouts-tab-first)
+  .homepage
+    .homepage-bar
+      object-fit: cover
+      width: 100%
+    .notice
+      .notice-title
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        .title-text
+          color: #B67C35
+          font-weight: bold
+          font-size: 17.5px
+@media (min-width: $layouts-android-min-x-large) and (max-width: $layouts-android-x-large)
+  .homepage
+    .homepage-bar
+      object-fit: cover
+      width: 100%
+    .notice
+      .notice-title
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        .title-text
+          color: #B67C35
+          font-weight: bold
+          font-size: 17px
+@media (min-width: $layouts-android-min-large) and (max-width: $layouts-android-large)
+  .homepage
+    .homepage-bar
+      object-fit: cover
+      width: 100%
+    .notice
+      .notice-title
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        .title-text
+          color: #B67C35
+          font-weight: bold
+          font-size: 16px
+@media (min-width: $layouts-android-min-medium) and (max-width: $layouts-android-medium)
+  .homepage
+    .homepage-bar
+      object-fit: cover
+      width: 100%
+
+
+    .notice
+      .notice-title
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+        .title-text
+          color: #B67C35
+          font-weight: bold
+          font-size: 15px
+
+@media (min-width: $layouts-android-min-small) and (max-width: $layouts-android-small)
+  .homepage
+    .homepage-bar
+      object-fit: cover
+      width: 100%
+
+    .notice
+      .notice-title
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+        .title-text
+          color: #B67C35
+          font-weight: bold
+          font-size: 16px

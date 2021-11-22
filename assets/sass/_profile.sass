@@ -1,0 +1,43 @@
+.profile
+  .short-profile
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 32px
+    .image-profile
+      width: 144px
+      height: 144px
+      border-radius: 50%
+      object-fit: cover
+    h3
+      margin-top: 16px
+      font-size: 18px
+    small
+      font-size: 14px
+      margin-top: 4px
+      color: $greyMidDark
+  .options
+    padding: 0px 4px 0px 4px
+    .list
+      display: flex
+      flex-direction: column
+      .item
+        padding: 12px 0px 12px 0px
+        height: inherit
+        border-top: 1px solid $greyLight
+        display: flex
+        align-items: center
+        flex-direction: row
+        outline: none
+        border-radius: 0
+        transition: .3s ease
+        //&:hover
+        //  background: rgba(black, .1)
+        .name
+          flex-grow: 1
+          font-size: 14px
+          font-weight: bold
+          &.logout
+            color: $blue
+          &.withdrawal
+            color: $red

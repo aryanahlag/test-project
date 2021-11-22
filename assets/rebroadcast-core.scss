@@ -1,0 +1,61 @@
+@media screen and (min-width: 801px){
+  #rebroadcast-core{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 800px) {
+  #rebroadcast-core {
+    .rebroadcast-division {
+      height: max-content;
+      width: 100%;
+      text-decoration: none;
+      padding: 10px 10px 0px 10px;
+
+      .rebroadcast-vod {
+        font-family: $pretendFont;
+        display: inline-block;
+        margin-left: 10px;
+        width: 45%;
+        height: 350px;
+
+        h4 {
+          color: black;
+        }
+
+        .rebroadcast-duration {
+          background-color: rgba(0, 0, 0, 0.3);
+          height: 25px;
+          height: 20px;
+          font-size: 13px;
+          width: fit-content;
+          margin-left: 10px;
+          margin-top: 5px;
+          position: absolute;
+          z-index: 15;
+          border-radius: 5px;
+          color: white;
+          padding: 0px 5px 0px 5px;
+        }
+
+        .vod-video {
+          box-shadow: #6C7481 2px 2px 5px;
+          border-radius: 5px;
+          width: 100%;
+          height: 70%;
+          object-fit: cover;
+        }
+
+        .vod-description {
+          padding-left: 5px;
+          list-style: none;
+
+          small {
+            font-size: 14px;
+            color: gray;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.login-form
+  height: 700px
+  padding:
+    left: 24px
+    right: 24px
+
+  .logo
+    background-image: url("~/static/logo-login.png")
+    width: 200px
+    height: 200px
+    margin: auto
+    background-repeat: no-repeat
+    background-size: contain
+
+  .title
+    margin-top: 98px
+    color: $blue
+    font-size: 24px
+
+  .form
+    margin-top: 50px !important
+
+    .label
+      font-size: 12px
+      font-weight: bold
+
+    .login-tf
+      font-size: 12px !important
+      margin-top: 8px
+
+  .checkbox-container
+    display: flex
+
+    .checkbox-wrap + .checkbox-wrap
+      margin-left: 16px
+
+    .checkbox-wrap
+      display: flex
+      flex-direction: row
+      align-items: center
+      position: relative
+
+      .checkbox
+        width: 1.1em
+        height: 1.1em
+        background-color: white
+        border-radius: 50%
+        border: 1px solid #ddd
+        -webkit-appearance: none
+        outline: none
+        cursor: pointer
+
+        &:checked
+          background-color: $blue
+
+      .checkbox-label
+        font-size: 12px
+        margin-left: 8px
+
+        &::after
+          content: ""
+          display: block
+          position: absolute
+          top: 1.5px
+          left: 1.5px
+          width: 8px
+          height: 5px
+          border: solid 2px white
+          border-top: none
+          border-right: none
+          transform: translate(3px, 4px) rotate(-45deg)
+
+.footer
+  position: fixed
+  z-index: 99
+  background: white
+  left: 0
+  bottom: 0px
+  width: 100%
+
+  .additional-button
+    display: flex
+    flex-direction: row
+    margin: 0 24px
+    padding-bottom: 24px
+    padding-top: 8px
+
+    .login-button
+      flex-grow: 1
+      color: white !important
+
+      &:first-child
+        margin-right: 6px
+        background: #B67C35 !important
+
+      &:last-child
+        margin-left: 6px
+        background: #6C7481 !important
+  .login-button-wrap
+    padding: 8px 0
+    margin: 0 24px
+    border-bottom: 1px solid $greyLight
+
+    .login-button
+      width: 100%
+      background-color: $blue
+      color: white
+
+.snack ::v-deep .v-snack__wrapper
+  min-width: max-content
+  margin-bottom: 150px
